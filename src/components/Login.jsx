@@ -37,10 +37,10 @@ export default function Login() {
   }
 
   return (
-    <div className="container-fluid">
+       <div className="container">
       <div
-        className="row h-60 align-items-center justify-content-center"
-        style={{ minHeight: '60vh' }}
+        className="row d-flex justify-content-center align-items-center"
+        style={{ minHeight: '100vh' }}
       >
         <div className="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-6">
           <form onSubmit={login}>

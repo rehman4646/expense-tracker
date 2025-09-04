@@ -19,7 +19,10 @@ function App() {
     <BrowserRouter>
       {isAuthenticated && <Sidebar />}
 
-      <div className='main-content' style={{ marginLeft: '20%', marginTop: '50px' }}>
+      <div className='main-content' style={{
+        marginLeft: isAuthenticated ? '20%' : '0', 
+        marginTop: isAuthenticated ? '50px' : '0' 
+      }}>
         <Routes>
           {isAuthenticated ? (
             <>
