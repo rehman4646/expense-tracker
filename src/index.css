@@ -1,0 +1,132 @@
+.sidebar li {
+  padding: 7px 20px;
+  display: block;
+  width: 100%;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  /* optional for rounded effect */
+}
+
+.sidebar li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-icons {
+  width: 38px;
+  padding: 8px;
+  height: 38px;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+/* Sidebar collapses on mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*  app.jsx file  */
+.main-content {
+  margin-left: 20%;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  table thead {
+    display: none;
+  }
+
+  table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
+
+.profile-img {
+  width: 188px;
+  height: 190px;
+  border-radius: 50%;
+  border: none;
+}
+
+.plus-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: black;
+  padding: 8px;
+}
+
+.Challan-slip-icon {
+  width: 166px;
+  height: 82px;
+}
+
+.tabs {
+  width: 214px !important;
+  height: 100px !important;
+  background-color: #009cff;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none;
+  border-top-left-radius: 25px !important;
+  box-shadow: 0px 10px 8px rgb(180 203 203);
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
